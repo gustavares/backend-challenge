@@ -43,10 +43,11 @@ and a MySQL database;
 - Create a "api" package to boot up the application "controllers"
 - Create a middleware to authenticate the user making the request
 - Use the chi library to configure the API routes (https://github.com/go-chi/chi)
-  - `GET /task`
-  - `POST /task`
-  - `PATCH /task`
-  - `DELETE /task`
+  - `GET /tasks`
+  - `GET /tasks/:id`
+  - `POST /tasks`
+  - `PATCH /tasks/:id`
+  - `DELETE /tasks/:id`
 - Use the validator lib to validate the requests (https://github.com/go-playground/validator)
 - Create a "entities" package with the Manager and Technician structs.
 - Use the MySQL lib (https://github.com/go-sql-driver/mysql)
