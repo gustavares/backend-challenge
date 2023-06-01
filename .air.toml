@@ -1,0 +1,19 @@
+[build]
+  cmd = "make build"
+  bin = "./bin/api"
+  tmp_dir = "./tmp"
+  vcs = false
+
+[watch]
+  directory = "."
+  excluded_paths = ["tmp", "bin"]
+  filter = ".*\\.go$"
+  commands = []
+
+[log]
+  level = "info"
+  color = true
+
+[error]
+  filename = "errors.log"
+  max_size = 10  # maximum is 1000
