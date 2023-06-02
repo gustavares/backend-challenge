@@ -7,6 +7,6 @@ import (
 type UserEntity struct {
 	ID       uuid.UUID `json:"id,omitempty"`
 	Username string    `json:"username"`
-	Role     string    `json:"user_role"`
+	Role     string    `json:"userRole"`
 	Deleted  bool      `json:"deleted,omitempty"`
 }
