@@ -15,6 +15,7 @@ type Handlers struct {
 func (h *Handlers) userRouter() chi.Router {
 	r := chi.NewRouter()
 	r.Post("/", h.UserHandler.Create)
+	r.Get("/{id}/tasks", h.TaskHandler.GetByUser)
 
 	return r
 }

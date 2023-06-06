@@ -7,9 +7,9 @@ import (
 )
 
 type TaskEntity struct {
-	ID          uuid.UUID `json:"id"`
-	UserId      uuid.UUID `json:"user_id"`
-	Deleted     bool      `json:"deleted"`
-	Summary     string    `json:"summary"`
-	PerformedIn time.Time `json:"performed_in"`
+	ID          uuid.UUID  `json:"id"`
+	UserId      uuid.UUID  `json:"userId"`
+	Deleted     bool       `json:"deleted"`
+	Summary     string     `json:"summary"`
+	PerformedIn *time.Time `json:"performed_in"`
 }
